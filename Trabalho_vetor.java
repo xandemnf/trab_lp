@@ -5,7 +5,9 @@ public class Trabalho_vetor{
 	public static void main(String[] args){
 
 			int count = 0;
-			int tamanhoVetor = 10000;
+			//int tamanhoVetor = 1000;
+			//int tamanhoVetor = 10000;
+			int tamanhoVetor = 1000000;
 			int media = 0;
 			double variancia = 0;
 			double desvioPadrao = 0;
@@ -66,7 +68,7 @@ public class Trabalho_vetor{
 				}
 			}
 
-			tempo[count] = ((double) ((System.currentTimeMillis()-tempoInicio)))/1000;
+			tempo[count] = ((double) ((System.currentTimeMillis()-tempoInicio)))/10000;
 			somaTempo += tempo[count]; 
 			count++;
 		}
@@ -75,7 +77,7 @@ public class Trabalho_vetor{
 			System.out.println("Tempo Total: " + tempo[z] + " segundos");
 		}
 
-			System.out.println("Soma Tempo: " + somaTempo);
+		System.out.println("Soma Tempo: " + somaTempo);
 		mediaTempo = somaTempo/30;
 		System.out.println("Media Tempo: " + mediaTempo);
 
