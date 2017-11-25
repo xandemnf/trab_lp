@@ -6,9 +6,9 @@ public class Trabalho_matriz{
 
 		//tamanho da matriz N x N
 		//int n=20;
-		int n =100;
+		//int n =100;
 		//int n = 1000;
-		//int n = 2000;
+		int n = 2000;
 		int count = 0;
 
 		//instanciando classe randomica
@@ -27,7 +27,7 @@ public class Trabalho_matriz{
 		
 		double tempo[] = new double[30];
 
-		while(count != 30){
+		//while(count != 30){
 		//preencher as matrizes
 		for(int i=0;i<n;i++){
 			for(int j=0;j<n;j++){
@@ -63,45 +63,18 @@ public class Trabalho_matriz{
 			}
 		}
 
-		variancia = somatorioVariancia/n*n;
-
+		variancia = somatorioVariancia/(n*n);
+		
 		//calcular Desvio Padrao
 		desvioPadrao = Math.sqrt(variancia);
-
-	}
-
 		System.out.println("Tamanho da Matriz: " + n + " x " + n);
 		System.out.println("Soma dos Valores: " + somatorio);
 		System.out.println("Media dos Valores: " + media);
 		System.out.println("Desvio Padrao: " + desvioPadrao);
 
+	//}
 
 
-
-		//imprime as matrizes
-		//for(int i=0; i<n; i++){
-		//	for(int j=0;j<n;j++){
-		//		System.out.print(matrizMultiplicada[i][j]+" ");
-		//	}	
-		//	System.out.print("\n");
-		//}
-
-			//System.out.print("calculou");
-	
-	
-
-
-		//System.out.println(somatorio);
-
-		//for(int i=0; i<n; i++){
-		//	int a=0;
-	//		for(int j=0;j<n;j++){
-	//			System.out.println(matrizA[i][j]);
-	//			
-	//		}
-	//		System.out.println(matrizB[i][j]);
-	//		a++;
-	//	}
 
 	}
 }	   				
